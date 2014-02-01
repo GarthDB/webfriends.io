@@ -4,7 +4,10 @@
   "description": "The web friends blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "coffee app.coffee"
+  },
+  "engines": {
+    "node": "0.10.x"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/GarthDB/webfriends.io/issues"
   },
-  "homepage": "https://github.com/GarthDB/webfriends.io"
+  "homepage": "https://github.com/GarthDB/webfriends.io",
+  "dependencies": {
+    "express": "~3.4.8",
+    "jade": "~1.1.5",
+    "coffee-script": "~1.7.1",
+    "stylus": "~0.42.2"
+  }
 }
