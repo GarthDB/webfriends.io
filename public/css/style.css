@@ -1,0 +1,72 @@
+body {
+  font-family: "Trebuchet MS", verdana, sans-serif;
+  color: #333;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+.mainheader {
+  background: url("../img/halftone_bg.svg") #c1272d no-repeat bottom center;
+  width: 100%;
+  height: 350px;
+  background-size: contain;
+  text-align: center;
+  position: relative;
+}
+.mainheader nav {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(138,28,32,0.6);
+}
+.mainheader nav ul {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  text-align: right;
+}
+.mainheader nav li {
+  display: inline-block;
+  height: 100%;
+  line-height: 60px;
+  box-sizing: border-box;
+}
+.mainheader nav a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.mainheader nav a:hover {
+  text-decoration: none;
+  background: #8a1c20;
+}
+.logo {
+  max-width: 844px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#content {
+  max-width: 550px;
+  position: relative;
+  margin: 20px auto 0;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 40px 0 10px;
+}
+p {
+  line-height: 2rem;
+}
+a {
+  color: #ff8e32;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
