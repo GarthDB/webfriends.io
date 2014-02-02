@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  each episode in episodes
+    .episode
+        h2.guest= episode.guest.full_name
+        .title= episode.guest.class
