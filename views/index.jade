@@ -3,5 +3,9 @@ extends layout
 block content
   each episode in episodes
     .episode
-        h2.guest= episode.guest.full_name
-        .title= episode.guest.class
+        .front
+            h2.guestname= episode.guest.full_name
+            .title= episode.guest.class
+            img.logo_small(src='/img/web_friends_small.svg')
+            img.front_image(src=episode.front_image)
+        .back

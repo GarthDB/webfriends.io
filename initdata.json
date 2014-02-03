@@ -3,7 +3,7 @@
 	"title" : "The Amazing Jaimee Newberry",
 	"season" : "1",
 	"episode" : "1",
-	"image" : "http://placekitten.com/200/300",
+	"front_image" : "/img/jaimee@2X.png",
 	"audio_url" : "https://dl.dropboxusercontent.com/u/113366/Jaimee%20Newberry-draft-mono.mp3",
 	"guest" : {
 		"full_name" : "Jaimee Newberry",
