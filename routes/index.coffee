@@ -5,6 +5,9 @@ episodes = db.get('episodecollection');
 
 # GET home page.
 
+exports.temp = (req, res) ->
+  res.render "temp"
+
 exports.index = (req, res) ->
   episodes.find {}, (err, docs)->
     res.render "index",
