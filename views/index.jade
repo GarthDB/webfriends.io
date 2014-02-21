@@ -2,6 +2,7 @@ extends layout
 
 block content
   each episode in episodes
+    -episode.guest.full_name = episode.guest.first_name+ " " +episode.guest.last_name
     .episode
         .front
             h2.guestname= episode.guest.full_name
@@ -9,3 +10,22 @@ block content
             img.logo_small(src='/img/web_friends_small.svg')
             img.front_image(src=episode.front_image)
         .back
+            h2.guestname= episode.guest.full_name
+            .episodenumber=episode.episode
+            img.avatar(src=episode.guest.avatar)
+            dl
+                dt Super power
+                dd=episode.guest.strength
+                dt Weakness
+                dd=episode.guest.weakness
+            dl
+                dt=episode.guest.first_name+" is"
+                dd=episode.guest.bio
+            ul.links
+                li: a(href="http://twitter.com/"+episode.guest.twitter)=episode.guest.twitter
+                li: a(href=episode.guest.url)=episode.guest.url
+            .episode
+                h2= "Listen to "+episode.guest.first_name+"'s episode"
+                audio(controls)
+                    each audio_url, audio_type in episode.audio_urls
+                        source(src=audio_url, type="audio/"+audio_type)
