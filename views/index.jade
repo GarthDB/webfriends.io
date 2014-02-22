@@ -10,9 +10,11 @@ block content
             img.logo_small(src='/img/web_friends_small.svg')
             img.front_image(src=episode.front_image)
         .back
-            h2.guestname= episode.guest.full_name
-            .episodenumber=episode.episode
-            img.avatar(src=episode.guest.avatar)
+            header
+                h2.guestname= episode.guest.full_name
+                - function leadzeros(num, size) { var s = num+""; while (s.length < size) s = "0" + s; return s; }
+                .episodenumber="#"+leadzeros(episode.episode, 2)
+            .avatar(style="background-image:url("+episode.guest.avatar+");")
             dl
                 dt Super power
                 dd=episode.guest.strength

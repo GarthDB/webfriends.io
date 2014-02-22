@@ -1,5 +1,5 @@
 body {
-  font-family: "Trebuchet MS", verdana, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #333;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -58,7 +58,7 @@ body {
   position: relative;
 }
 #content {
-  max-width: 550px;
+  max-width: 700px;
   position: relative;
   margin: 20px auto 0;
 }
@@ -76,14 +76,25 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.episode .back,
 .episode .front {
   width: 300px;
   height: 400px;
+  box-shadow: 1px 7px 8px rgba(0,0,0,0.2);
+  display: inline-block;
+}
+.episode .front {
   background: url("/img/halftone_bg_small.svg") #ffebaf no-repeat;
   background-position: right bottom;
   background-size: 241px 580px;
-  box-shadow: 1px 7px 8px rgba(0,0,0,0.2);
   position: relative;
+  margin-right: 20px;
+}
+.episode .front .guestname {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
 }
 .episode .front_image {
   width: 100%;
@@ -125,10 +136,47 @@ a:hover {
   font-family: 'blackout';
   color: #e24c68;
   font-size: 30px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  z-index: 3;
+}
+.episode .back {
+  background: #f0e8dc;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+.episode .back header {
+  background: #f7be5a;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.episode .back .guestname {
+  font-size: 26px;
+}
+.episode .back .guestname,
+.episode .back .episodenumber {
+  display: inline-block;
+}
+.episode .back .episodenumber {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 24px;
+}
+.episode .back .avatar {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  border-radius: 40px;
+  margin: 10px 10px 10px 20px;
+}
+.episode .back dl {
+  font-size: 14px;
+}
+.episode .back dt {
+  font-weight: 600;
+}
+.episode .back dd {
+  font-weight: 300;
 }
 #content {
   box-sizing: border-box;
