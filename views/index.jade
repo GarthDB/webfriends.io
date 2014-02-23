@@ -14,19 +14,20 @@ block content
                 h2.guestname= episode.guest.full_name
                 - function leadzeros(num, size) { var s = num+""; while (s.length < size) s = "0" + s; return s; }
                 .episodenumber="#"+leadzeros(episode.episode, 2)
-            .avatar(style="background-image:url("+episode.guest.avatar+");")
-            dl
-                dt Super power
-                dd=episode.guest.strength
-                dt Weakness
-                dd=episode.guest.weakness
-            dl
-                dt=episode.guest.first_name+" is"
-                dd=episode.guest.bio
-            ul.links
-                li: a(href="http://twitter.com/"+episode.guest.twitter)=episode.guest.twitter
-                li: a(href=episode.guest.url)=episode.guest.url
-            .episode
+            .backdetails
+                .avatar(style="background-image:url("+episode.guest.avatar+");")
+                dl.toplist
+                    dt Super power
+                    dd=episode.guest.strength
+                    dt Weakness
+                    dd=episode.guest.weakness
+                dl
+                    dt=episode.guest.first_name+" is"
+                    dd!=marked(episode.guest.bio)
+                ul.links
+                    each url in episode.guest.urls
+                        li(class=url.class): a(href=url.url)=url.label
+            .audioplayer
                 h2= "Listen to "+episode.guest.first_name+"'s episode"
                 audio(controls)
                     each audio_url, audio_type in episode.audio_urls

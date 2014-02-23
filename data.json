@@ -7,14 +7,19 @@
 	"front_image" : "/img/jaimee@2X.png",
 	"guest" : {
 		"avatar" : "https://pbs.twimg.com/profile_images/1652341365/jai_hat.jpg",
-		"bio" : "a consultant, Co-host of the Unproffesional podcast, co-founder of Bests.com, Speaker, Writer, and Mom.",
+		"bio" : "a consultant, Co-host of the [Unproffesional podcast](http://unprofesh.com/), co-founder of [Bests.com](http://www.bests.com), Speaker, Writer, and Mom.",
 		"class" : "designer",
 		"first_name" : "Jaimee",
 		"last_name" : "Newberry",
+		"weakness" : "Her daughters",
 		"strength" : "Almost headstands",
-		"twitter" : "@jaimeejaimee",
-		"url" : "http://ohheyjaimee.tumblr.com/about",
-		"weakness" : "Her daughters"
+		"urls" : [
+			{
+				"url" : "http://twitter.com/jaimeejaimee",
+				"label" : "@jaimeejaimee",
+				"class" : "twitter"
+			}
+		]
 	},
 	"season" : "1",
 	"title" : "The Amazing Jaimee Newberry"

@@ -82,6 +82,7 @@ a:hover {
   height: 400px;
   box-shadow: 1px 7px 8px rgba(0,0,0,0.2);
   display: inline-block;
+  overflow: hidden;
 }
 .episode .front {
   background: url("/img/halftone_bg_small.svg") #ffebaf no-repeat;
@@ -141,6 +142,8 @@ a:hover {
   background: #f0e8dc;
   box-sizing: border-box;
   padding-top: 10px;
+  color: #6e5f5c;
+  position: relative;
 }
 .episode .back header {
   background: #f7be5a;
@@ -153,6 +156,8 @@ a:hover {
 }
 .episode .back .guestname {
   font-size: 26px;
+  position: relative;
+  top: 2px;
 }
 .episode .back .guestname,
 .episode .back .episodenumber {
@@ -167,16 +172,52 @@ a:hover {
   height: 80px;
   background-size: cover;
   border-radius: 40px;
-  margin: 10px 10px 10px 20px;
+  margin: 0 10px 0 0;
+  float: left;
+}
+.episode .back .backdetails {
+  padding: 10px 20px;
 }
 .episode .back dl {
   font-size: 14px;
 }
+.episode .back dl a {
+  font-weight: 400;
+}
+.episode .back .toplist {
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
 .episode .back dt {
   font-weight: 600;
+  margin-bottom: 2px;
 }
 .episode .back dd {
   font-weight: 300;
+  margin-bottom: 10px;
+}
+.episode .back dd p {
+  line-height: normal;
+}
+.episode .back .links {
+  font-size: 14px;
+  list-style: none;
+}
+.episode .back .links li {
+  display: inline-block;
+}
+.episode .back .links li.twitter:before {
+  content: url("/img/twitter.svg");
+  vertical-align: center;
+}
+.episode .back .audioplayer {
+  background: #fff;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  bottom: 14px;
+  box-sizing: border-box;
+  padding: 10px 20px;
 }
 #content {
   box-sizing: border-box;
