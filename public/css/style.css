@@ -58,7 +58,7 @@ body {
   position: relative;
 }
 #content {
-  max-width: 700px;
+  max-width: 810px;
   position: relative;
   margin: 20px auto 0;
 }
@@ -67,7 +67,7 @@ h1 {
   margin: 40px 0 10px;
 }
 p {
-  line-height: 2rem;
+  line-height: 1.4rem;
 }
 a {
   color: #ff8e32;
@@ -222,4 +222,8 @@ a:hover {
 #content {
   box-sizing: border-box;
   padding-bottom: 30px;
+}
+.sidemenu {
+  display: inline-block;
+  width: 160px;
 }
