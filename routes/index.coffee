@@ -12,5 +12,6 @@ exports.temp = (req, res) ->
 exports.index = (req, res) ->
   episodes.find {}, (err, docs)->
     res.render "index",
+      title: 'Web Friends HQ'
       episodes: docs
       marked: marked
