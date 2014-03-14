@@ -1,9 +1,11 @@
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #333;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-}
+html
+  font-size 18px
+body
+  font-family 'Source Sans Pro', sans-serif
+  color #333
+  font-size 1rem
+  -webkit-font-smoothing antialiased
+  font-smoothing antialiased
 .mainheader
   background url("../img/halftone_bg.svg") #c1272d no-repeat bottom center
   width 100%
@@ -44,32 +46,27 @@ body {
       &:hover
         text-decoration none
         background rgba(138,28,32,1)
-.logo {
-  max-width: 844px;
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-#content {
-  max-width: 700px;
-  position: relative;
-  margin: 20px auto 0;
-}
-h1 {
-  font-size: 2.5rem;
-  margin: 40px 0 10px;
-}
-p {
-  line-height: 2rem;
-}
-a {
-	color: #FF8E32;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
+.logo
+  max-width 844px
+  width 100%
+  height auto
+  position relative
+#content
+  max-width 820px
+  position relative
+  margin 20px auto 0
+h1
+  font-size 2.5rem
+  margin 40px 0 10px
+p
+  line-height 1.4rem
+a
+	color #347187
+	text-decoration none
+a:hover
+	text-decoration underline
 .episode
+  display inline-block
   .back, .front
     width 300px
     height 400px
@@ -163,10 +160,10 @@ a:hover {
       margin-top 6px
       margin-bottom 15px
     dt
-      font-weight 600
+      font-weight 700
       margin-bottom 2px
     dd
-      font-weight 300
+      font-weight 400
       margin-bottom 10px
       p
         line-height normal
@@ -189,3 +186,38 @@ a:hover {
 #content
   box-sizing border-box
   padding-bottom 30px
+  padding-left 200px
+  position relative
+.sidemenu
+  position absolute
+  left 0
+  top 0
+  width 160px
+  vertical-align top
+.description
+  border-bottom 1px solid #CCC
+  padding-bottom 10px
+  margin-bottom 40px
+  p
+    line-height 1.5rem
+.caption
+  margin-top 0.8rem
+  font-size 0.7rem
+.sidenav
+  font-size 0.75rem
+  line-height 1.3rem
+  margin-bottom 60px
+.sponsor
+  font-size 0.7rem
+.ad
+  margin-top 10px
+  width 120px
+  height 90px
+  background gray
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+  .episode .back
+    dt
+      font-weight 600
+    dd
+      font-weight 300
