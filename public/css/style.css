@@ -82,6 +82,7 @@ a:hover {
 }
 .episode {
   display: inline-block;
+  margin-bottom: 50px;
 }
 .episode .back,
 .episode .front {

@@ -29,3 +29,34 @@
 	"season" : "1",
 	"title" : "The Amazing Jaimee Newberry"
 }
+{
+	"_id" : ObjectId("532399d806f192ef1fb671bc"),
+	"audio_urls" : {
+		"mpeg" : "http://webfriends.io/Jaimee-Newberry-draft-mono.mp3"
+	},
+	"episode" : "2",
+	"front_image" : "/img/dam@2X.png",
+	"guest" : {
+		"avatar" : "/img/dam_avatar.png",
+		"bio" : "awesome.",
+		"class" : "developer",
+		"first_name" : "Kristofer",
+		"last_name" : "Joseph",
+		"weakness" : "Carbs",
+		"strength" : "Body Hair",
+		"urls" : [
+			{
+				"url" : "http://twitter.com/dam",
+				"label" : "@dam",
+				"class" : "twitter"
+			},
+			{
+				"url" : "http://kristoferjoseph.com",
+				"label" : "kristoferjoseph.com",
+				"class" : "link"
+			}
+		]
+	},
+	"season" : "1",
+	"title" : "The Unstoppable Kristofer Joseph"
+}
