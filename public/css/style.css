@@ -172,7 +172,7 @@ a:hover {
   display: inline-block;
 }
 .episode .back .episodenumber {
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: Impact, HelveticaNeue-CondensedBlack, sans-serif;
   font-size: 24px;
 }
 .episode .back .avatar {
