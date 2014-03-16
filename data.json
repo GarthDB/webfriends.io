@@ -35,28 +35,23 @@
 		"mpeg" : "http://webfriends.io/Jaimee-Newberry-draft-mono.mp3"
 	},
 	"episode" : "2",
-	"front_image" : "/img/dam@2X.png",
+	"front_image" : "/img/markjohnson@2X.png",
 	"guest" : {
-		"avatar" : "/img/dam_avatar.png",
-		"bio" : "awesome.",
-		"class" : "developer",
-		"first_name" : "Kristofer",
-		"last_name" : "Joseph",
-		"weakness" : "Carbs",
-		"strength" : "Body Hair",
+		"avatar" : "/img/markjohnson_avatar.png",
+		"bio" : "a giraffe-like monster who occasionally designs, occasionally grazes, and usually doesn’t know what day it is.",
+		"class" : "designer",
+		"first_name" : "Mark",
+		"last_name" : "Johnson",
+		"weakness" : "Too much eating",
+		"strength" : "Eating",
 		"urls" : [
 			{
-				"url" : "http://twitter.com/dam",
-				"label" : "@dam",
+				"url" : "http://twitter.com/markjohnsoncc",
+				"label" : "@markjohnsoncc",
 				"class" : "twitter"
-			},
-			{
-				"url" : "http://kristoferjoseph.com",
-				"label" : "kristoferjoseph.com",
-				"class" : "link"
 			}
 		]
 	},
 	"season" : "1",
-	"title" : "The Unstoppable Kristofer Joseph"
+	"title" : "The Astonishing Mark Johnson"
 }
