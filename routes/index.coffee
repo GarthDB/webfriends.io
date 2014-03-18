@@ -3,6 +3,7 @@ package_vars = require('../package.json')
 db = require('monk')(package_vars.dbconfig.host+'/'+package_vars.dbconfig.dbname)
 episodes = db.get('episodecollection');
 marked = require('marked')
+moment = require('moment')
 
 # GET home page.
 
@@ -15,3 +16,4 @@ exports.index = (req, res) ->
       title: 'Web Friends HQ'
       episodes: docs
       marked: marked
+      moment: moment

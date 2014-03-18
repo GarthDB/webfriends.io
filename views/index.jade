@@ -43,6 +43,7 @@ block content
                         li(class=url.class): a(href=url.url)=url.label
             .audioplayer
                 h2= "Listen to "+episode.guest.first_name+"'s episode"
-                audio(controls)
+                audio(controls, width="260", height="30")
                     each audio_url, audio_type in episode.audio_urls
                         source(src=audio_url, type="audio/"+audio_type)
+                .recorddate Recorded #{moment(episode.record_date).format("MMM d, YYYY")}
