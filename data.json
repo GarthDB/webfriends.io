@@ -1,7 +1,8 @@
 {
 	"_id" : ObjectId("52ed92b0eb874c9a405bbe58"),
+	"published": true,
 	"audio_urls" : {
-		"mpeg" : "http://webfriends.io/Jaimee-Newberry-draft-mono.mp3"
+		"mpeg" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-1.mp3"
 	},
 	"episode" : "1",
 	"front_image" : "/img/jaimee@2X.png",
@@ -32,6 +33,7 @@
 }
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
+	"published": false,
 	"audio_urls" : {
 		"mpeg" : "http://webfriends.io/Jaimee-Newberry-draft-mono.mp3"
 	},
