@@ -27,7 +27,8 @@
 		]
 	},
 	"season" : "1",
-	"title" : "The Amazing Jaimee Newberry"
+	"title" : "The Amazing Jaimee Newberry",
+	"record_date" : new Date('Jan 24, 2014')
 }
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
@@ -53,5 +54,6 @@
 		]
 	},
 	"season" : "1",
-	"title" : "The Astonishing Mark Johnson"
+	"title" : "The Astonishing Mark Johnson",
+	"record_date" : new Date('Mar 21, 2014')
 }

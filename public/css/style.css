@@ -16,6 +16,7 @@ body {
   text-align: center;
   position: relative;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-bottom: 60px;
 }
 .mainheader img {
@@ -43,10 +44,12 @@ body {
   height: 100%;
   line-height: 60px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 .mainheader nav a {
   display: inline-block;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding: 0 20px;
   color: #fff;
   cursor: pointer;
@@ -91,6 +94,7 @@ a:hover {
   box-shadow: 1px 7px 8px rgba(0,0,0,0.2);
   display: inline-block;
   overflow: hidden;
+  vertical-align: top;
 }
 .episode .front {
   background: url("/img/halftone_bg_small.svg") #ffebaf no-repeat;
@@ -149,6 +153,7 @@ a:hover {
 .episode .back {
   background: #f0e8dc;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-top: 10px;
   color: #6e5f5c;
   position: relative;
@@ -157,10 +162,14 @@ a:hover {
   background: #f7be5a;
   height: 40px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding: 0 10px;
   display: flex;
+  display: -webkit-flex;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
   align-items: center;
+  -webkit-align-items: center;
 }
 .episode .back .guestname {
   font-size: 26px;
@@ -225,10 +234,23 @@ a:hover {
   position: absolute;
   bottom: 14px;
   box-sizing: border-box;
-  padding: 10px 20px;
+  -moz-box-sizing: border-box;
+  padding: 12px 20px;
+}
+.episode .back .audioplayer h2 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.episode .back .audioplayer .recorddate {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 8px;
+  font-weight: 400;
 }
 #content {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-bottom: 30px;
   padding-left: 200px;
   position: relative;
@@ -272,5 +294,38 @@ a:hover {
   }
   .episode .back dd {
     font-weight: 300;
+  }
+}
+@media only screen and (max-width : 880px) {
+  .mainheader img {
+    width: 100%;
+  }
+  .episode {
+    display: block;
+  }
+  .episode .front {
+    display: none;
+  }
+  #content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 220px;
+    width: 540px;
+  }
+  .sidemenu {
+    left: 20px;
+  }
+}
+@media only screen and (max-width : 540px) {
+  .sidemenu {
+    display: none;
+  }
+  #content {
+    padding: 0;
+    width: 300px;
+  }
+  .mainheader {
+    height: 220px;
   }
 }
