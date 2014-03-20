@@ -1,4 +1,4 @@
-{
+[{
 	"_id" : ObjectId("52ed92b0eb874c9a405bbe58"),
 	"published": true,
 	"audio_urls" : {
@@ -30,7 +30,7 @@
 	"season" : "1",
 	"title" : "The Amazing Jaimee Newberry",
 	"record_date" : new Date('Jan 24, 2014')
-}
+},
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
 	"published": false,
@@ -58,4 +58,4 @@
 	"season" : "1",
 	"title" : "The Astonishing Mark Johnson",
 	"record_date" : new Date('Mar 21, 2014')
-}
+}]
