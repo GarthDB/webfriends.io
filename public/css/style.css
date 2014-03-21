@@ -193,7 +193,11 @@ a:hover {
   float: left;
 }
 .episode .back .backdetails {
-  padding: 10px 20px;
+  padding: 10px 20px 35px;
+  height: 240px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 .episode .back dl {
   font-size: 14px;
@@ -219,13 +223,20 @@ a:hover {
 .episode .back .links {
   font-size: 14px;
   list-style: none;
+  position: absolute;
+  bottom: 15px;
 }
 .episode .back .links li {
   display: inline-block;
+  margin-right: 10px;
+}
+.episode .back .links li:last-child {
+  margin-right: 0;
 }
 .episode .back .links li.twitter:before {
   content: url("/img/twitter.svg");
-  vertical-align: center;
+  position: relative;
+  top: 4px;
 }
 .episode .back .audioplayer {
   background: #fff;
@@ -242,11 +253,16 @@ a:hover {
   font-size: 14px;
   font-weight: 600;
 }
-.episode .back .audioplayer .recorddate {
+.episode .back .audioplayer .recorddate,
+.episode .back .audioplayer .download {
   font-size: 12px;
-  text-align: right;
+  display: inline-block;
+  float: left;
   margin-top: 8px;
   font-weight: 400;
+}
+.episode .back .audioplayer .recorddate {
+  float: right;
 }
 #content {
   box-sizing: border-box;
@@ -263,12 +279,10 @@ a:hover {
   vertical-align: top;
 }
 .description {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .description p {
-  line-height: 1.5rem;
+  line-height: 1.3rem;
 }
 .caption {
   margin-top: 0.8rem;
@@ -282,8 +296,19 @@ a:hover {
 .sponsor {
   font-size: 0.7rem;
 }
+.sponsor > div:first-child {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.sponsor ul {
+  list-style: none;
+}
+.sponsor li {
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
 .ad {
-  margin-top: 10px;
   width: 120px;
   height: 90px;
   background: #808080;

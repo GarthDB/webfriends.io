@@ -23,7 +23,7 @@ app.use express.static(path.join(__dirname, "public"))
 # development only
 app.use express.errorHandler()  if "development" is app.get("env")
 
-app.get "/", routes.temp
-app.get "/home", routes.index
+app.get "/", routes.index
+app.get "/schedule", routes.schedule
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")

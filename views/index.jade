@@ -3,18 +3,7 @@ extends layout
 block content
   aside.sidemenu
     block sidemenu
-      .description
-        p A weekly interview show about the web and the friends who make it.
-        .caption Hosted by <a href="http://www.garthdb.com">Garth Braithwaite</a>
-      nav.sidenav
-        ul
-          li: a Upcoming Episodes
-          li: a Listen Live
-          li: a Episode Archive
-          li: a Contact
-      .sponsor
-        div Brought to you by
-        .ad
+      include partials/sidemenu
   each episode in episodes
     -episode.guest.full_name = episode.guest.first_name+ " " +episode.guest.last_name
     .episode
@@ -41,8 +30,9 @@ block content
                 ul.links
                     each url in episode.guest.urls
                         li(class=url.class): a(href=url.url)=url.label
-            -if(episode.audio_urls.mpeg)
+            -if(episode.audio_url)
               .audioplayer
                   h2= "Listen to "+episode.guest.first_name+"'s episode"
-                  audio(controls, width="260", height="30", src=episode.audio_urls.mpeg)
+                  audio(controls, width="260", height="30", src=episode.audio_url)
+                  .download: a(href=episode.audio_url, download=download) Download mp3
                   .recorddate Recorded #{moment(episode.record_date).format("MMM d, YYYY")}

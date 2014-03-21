@@ -161,7 +161,11 @@ a:hover
       margin 0 10px 0 0
       float left
     .backdetails
-      padding 10px 20px
+      padding 10px 20px 35px
+      height 240px
+      box-sizing border-box
+      position relative
+      overflow hidden
     dl
       font-size 14px
       a
@@ -180,11 +184,17 @@ a:hover
     .links
       font-size 14px
       list-style none
+      position absolute
+      bottom 15px
       li
         display inline-block
+        margin-right 10px
+        &:last-child
+          margin-right 0
         &.twitter:before
           content url('/img/twitter.svg')
-          vertical-align center
+          position relative
+          top 4px
     .audioplayer
       background white
       width 100%
@@ -198,11 +208,14 @@ a:hover
         margin-bottom 10px
         font-size 14px
         font-weight 600
-      .recorddate
+      .recorddate, .download
         font-size 12px
-        text-align right
+        display inline-block
+        float left
         margin-top 8px
         font-weight 400
+      .recorddate
+        float right
 #content
   box-sizing border-box
   -moz-box-sizing border-box
@@ -216,11 +229,9 @@ a:hover
   width 160px
   vertical-align top
 .description
-  border-bottom 1px solid #CCC
-  padding-bottom 10px
-  margin-bottom 40px
+  margin-bottom 100px
   p
-    line-height 1.5rem
+    line-height 1.3rem
 .caption
   margin-top 0.8rem
   font-size 0.7rem
@@ -230,8 +241,16 @@ a:hover
   margin-bottom 60px
 .sponsor
   font-size 0.7rem
+  & > div:first-child
+    margin-bottom 10px
+    border-bottom 1px solid #CCC
+    padding-bottom 10px
+  ul
+    list-style none
+  li
+    margin-bottom 10px
+    margin-right 30px
 .ad
-  margin-top 10px
   width 120px
   height 90px
   background gray

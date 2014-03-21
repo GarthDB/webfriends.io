@@ -1,9 +1,6 @@
 [{
 	"_id" : ObjectId("52ed92b0eb874c9a405bbe58"),
-	"published": true,
-	"audio_urls" : {
-		"mpeg" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-1.mp3"
-	},
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-1.mp3",
 	"episode" : "1",
 	"front_image" : "/img/jaimee@2X.png",
 	"guest" : {
@@ -29,14 +26,11 @@
 	},
 	"season" : "1",
 	"title" : "The Amazing Jaimee Newberry",
-	"record_date" : new Date('Jan 24, 2014')
+	"record_date" : new Date('Jan 24, 2014'),
+	"publish_date" : new Date('Mar 18, 2014')
 },
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
-	"published": false,
-	"audio_urls" : {
-		"mpeg" : "http://webfriends.io/Jaimee-Newberry-draft-mono.mp3"
-	},
 	"episode" : "2",
 	"front_image" : "/img/markjohnson@2X.png",
 	"guest" : {
@@ -57,5 +51,113 @@
 	},
 	"season" : "1",
 	"title" : "The Astonishing Mark Johnson",
-	"record_date" : new Date('Mar 21, 2014')
-}]
+	"record_date" : new Date('Mar 21, 2014'),
+	"publish_date" : new Date('Mar 21, 2014')
+},
+{
+	"episode" : "3",
+	"guest" :{
+		"first_name" : "Val",
+		"last_name" : "Head",
+		"urls" : [
+			{
+				"url" : "https://twitter.com/vlh",
+				"label" : "@vlh",
+				"class" : "twitter"
+			}
+		]
+	},
+	"publish_date" : new Date('Mar 28, 2014')
+},
+{
+	"episode" : "4",
+	"guest" :{
+		"first_name" : "Bermon",
+		"last_name" : "Painter",
+		"urls" : [
+			{
+				"url" : "https://twitter.com/bermonpainter",
+				"label" : "@bermonpainter",
+				"class" : "twitter"
+			}
+		]
+	},
+	"publish_date" : new Date('Apr 4, 2014')
+},
+{
+	"episode" : "5",
+	"guest" :{
+		"first_name" : "Kristofer",
+		"last_name" : "Joseph",
+		"urls" : [
+			{
+				"url" : "https://twitter.com/dam",
+				"label" : "@dam",
+				"class" : "twitter"
+			}
+		]
+	},
+	"publish_date" : new Date('Apr 11, 2014')
+},
+{
+	"episode" : "6",
+	"guest" :{
+		"first_name" : "Rachel",
+		"last_name" : "Nabors",
+		"urls" : [
+			{
+				"url" : "https://twitter.com/rachelnabors",
+				"label" : "@rachelnabors",
+				"class" : "twitter"
+			}
+		]
+	},
+	"publish_date" : new Date('Apr 18, 2014')
+},
+{
+	"episode" : "7",
+	"guest" :{
+		"first_name" : "Aaron",
+		"last_name" : "Wade",
+		"urls" : [
+			{
+				"url" : "https://twitter.com/areus",
+				"label" : "@areus",
+				"class" : "twitter"
+			}
+		]
+	},
+	"publish_date" : new Date('Apr 25, 2014')
+},
+{
+	"episode" : "8",
+	"guest" :{
+		"first_name" : "Adam",
+		"last_name" : "Morse",
+		"urls" : [
+			{
+				"url" : "https://twitter.com/mrmrs_",
+				"label" : "@mrmrs_",
+				"class" : "twitter"
+			}
+		]
+	},
+	"publish_date" : new Date('May 2, 2014')
+},
+{
+	"episode" : "9",
+	"guest" :{
+		"first_name" : "Brian",
+		"last_name" : "LeRoux",
+		"urls" : [
+			{
+				"url" : "https://twitter.com/brianleroux",
+				"label" : "@brianleroux",
+				"class" : "twitter"
+			}
+		]
+	},
+	"publish_date" : new Date('May 9, 2014')
+}
+
+]
