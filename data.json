@@ -31,6 +31,7 @@
 },
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-2.mp3",
 	"episode" : "2",
 	"front_image" : "/img/markjohnson@2X.png",
 	"guest" : {
@@ -55,18 +56,31 @@
 	"publish_date" : new Date('Mar 21, 2014')
 },
 {
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-3.mp3",
 	"episode" : "3",
+	"front_image" : "/img/valhead@2X.png",
 	"guest" :{
+		"avatar" : "/img/valhead_avatar.jpg",
+		"bio" : "a designer and consultant in Philadelphia; Author of [The Pocket Guide to CSS Animations](http://www.fivesimplesteps.com/products/css-animations). Co-host of the [Ladies in Tech](http://ladiesintech.com/category/podcast/) podcast. Founded the [Web Design Day](http://www.webdesignday/) conference.",
+		"class" : "designer",
 		"first_name" : "Val",
 		"last_name" : "Head",
+		"weakness" : "Cute puppies",
+		"strength" : "Intolerable coffee snob",
 		"urls" : [
 			{
 				"url" : "https://twitter.com/vlh",
 				"label" : "@vlh",
 				"class" : "twitter"
+			},
+			{
+				"url" : "http://valhead.com",
+				"label" : "valhead.com",
+				"class" : "link"
 			}
 		]
 	},
+	"record_date" : new Date('Mar 28, 2014'),
 	"publish_date" : new Date('Mar 28, 2014')
 },
 {
