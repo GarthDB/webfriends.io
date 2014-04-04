@@ -84,10 +84,17 @@
 	"publish_date" : new Date('Mar 28, 2014')
 },
 {
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-4.mp3",
 	"episode" : "4",
+	"front_image" : "/img/bermon_painter@2X.png",
 	"guest" :{
+		"avatar" : "/img/bermon_avatar.jpg",
+		"bio" : "a design/developer hybrid that loves Ruby & pre-processors. Hubby, father, cupcake eater, root beer drinker, spanish speaker, LDS, and organizer of [Blend Conf](http://www.blendconf.com/).",
+		"class" : "designer",
 		"first_name" : "Bermon",
 		"last_name" : "Painter",
+		"weakness" : "unkown",
+		"strength" : "Mustache",
 		"urls" : [
 			{
 				"url" : "https://twitter.com/bermonpainter",
@@ -96,6 +103,7 @@
 			}
 		]
 	},
+	"record_date" : new Date('Apr 4, 2014'),
 	"publish_date" : new Date('Apr 4, 2014')
 },
 {
