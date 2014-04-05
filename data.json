@@ -1,7 +1,9 @@
 [{
 	"_id" : ObjectId("52ed92b0eb874c9a405bbe58"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-1.mp3",
+	"season" : "1",
 	"episode" : "1",
+	"slug": "jaimeejaimee",
 	"front_image" : "/img/jaimee@2X.png",
 	"guest" : {
 		"avatar" : "https://pbs.twimg.com/profile_images/1652341365/jai_hat.jpg",
@@ -24,7 +26,6 @@
 			}
 		]
 	},
-	"season" : "1",
 	"title" : "The Amazing Jaimee Newberry",
 	"record_date" : new Date('Jan 24, 2014'),
 	"publish_date" : new Date('Mar 18, 2014')
@@ -32,7 +33,9 @@
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-2.mp3",
+	"season" : "1",
 	"episode" : "2",
+	"slug": "markjohnsoncc",
 	"front_image" : "/img/markjohnson@2X.png",
 	"guest" : {
 		"avatar" : "/img/markjohnson_avatar.png",
@@ -50,14 +53,15 @@
 			}
 		]
 	},
-	"season" : "1",
 	"title" : "The Astonishing Mark Johnson",
 	"record_date" : new Date('Mar 21, 2014'),
 	"publish_date" : new Date('Mar 21, 2014')
 },
 {
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-3.mp3",
+	"season" : "1",
 	"episode" : "3",
+	"slug": "vlh",
 	"front_image" : "/img/valhead@2X.png",
 	"guest" :{
 		"avatar" : "/img/valhead_avatar.jpg",
@@ -85,7 +89,9 @@
 },
 {
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-4.mp3",
+	"season" : "1",
 	"episode" : "4",
+	"slug": "bermonpainter",
 	"front_image" : "/img/bermon_painter@2X.png",
 	"guest" :{
 		"avatar" : "/img/bermon_avatar.jpg",
@@ -107,7 +113,9 @@
 	"publish_date" : new Date('Apr 4, 2014')
 },
 {
+	"season" : "1",
 	"episode" : "5",
+	"slug": "dam",
 	"guest" :{
 		"first_name" : "Kristofer",
 		"last_name" : "Joseph",
@@ -122,7 +130,9 @@
 	"publish_date" : new Date('Apr 11, 2014')
 },
 {
+	"season" : "1",
 	"episode" : "6",
+	"slug": "rachelnabors",
 	"guest" :{
 		"first_name" : "Rachel",
 		"last_name" : "Nabors",
@@ -137,7 +147,9 @@
 	"publish_date" : new Date('Apr 18, 2014')
 },
 {
+	"season" : "1",
 	"episode" : "7",
+	"slug": "areus",
 	"guest" :{
 		"first_name" : "Aaron",
 		"last_name" : "Wade",
@@ -152,7 +164,9 @@
 	"publish_date" : new Date('Apr 25, 2014')
 },
 {
+	"season" : "1",
 	"episode" : "8",
+	"slug": "mrmrs",
 	"guest" :{
 		"first_name" : "Adam",
 		"last_name" : "Morse",
@@ -167,7 +181,9 @@
 	"publish_date" : new Date('May 2, 2014')
 },
 {
+	"season" : "1",
 	"episode" : "9",
+	"slug": "brianleroux",
 	"guest" :{
 		"first_name" : "Brian",
 		"last_name" : "LeRoux",
