@@ -10,4 +10,4 @@ block content
       -episode.guest.full_name = episode.guest.first_name+ " " +episode.guest.last_name
       li
         a(href=episode.guest.urls[0].url) #{episode.guest.full_name}
-        |  #{moment(episode.publish_date).format("MMM d, YYYY")}
+        |  #{moment(episode.publish_date).format("MMM Do, YYYY")}

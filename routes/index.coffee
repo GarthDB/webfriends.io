@@ -1,6 +1,6 @@
 mongo = require('mongodb')
-package_vars = require('../package.json')
-db = require('monk')(package_vars.dbconfig.host+'/'+package_vars.dbconfig.dbname)
+config = require('../config.json').dbconfig.production
+db = require('monk')(config.host+'/'+config.dbname)
 episodes = db.get('episodecollection');
 marked = require('marked')
 moment = require('moment')

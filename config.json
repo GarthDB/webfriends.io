@@ -1,0 +1,12 @@
+{
+  "dbconfig": {
+    "production": {
+      "host": "localhost",
+      "dbname": "webfriends"
+    },
+    "test": {
+      "host": "localhost",
+      "dbname": "webfriendstest"
+    }
+  }
+}
