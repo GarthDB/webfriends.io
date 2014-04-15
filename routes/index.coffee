@@ -22,3 +22,11 @@ exports.index = (req, res) ->
       episodes: docs
       marked: marked
       moment: moment
+
+exports.episode = (req, res) ->
+  episodes.find {"season":parseInt(req.params.season_id),"episode":parseInt(req.params.episode_id)}, (err, docs)->
+    res.render "index",
+      title: "Episode"
+      episodes: docs
+      marked: marked
+      moment: moment
