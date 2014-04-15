@@ -25,6 +25,7 @@ app.use express.errorHandler()  if "development" is app.get("env")
 
 app.get "/", routes.index
 app.get "/schedule", routes.schedule
+app.get "/season/:season_id/:episode_slug", routes.episode
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
 
