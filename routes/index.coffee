@@ -24,10 +24,7 @@ exports.index = (req, res) ->
       moment: moment
 
 exports.episode = (req, res) ->
-  episodes.find {"season":parseInt(req.params.season_id),"slug":req.params.episode_slug}, (err, docs)->
-    console.log req.params.episode_slug
-    console.log req.params.season_id
-    console.log docs
+  episodes.find {"season":parseInt(req.params.season_id),"episode":parseInt(req.params.episode_id)}, (err, docs)->
     res.render "index",
       title: "Episode"
       episodes: docs
