@@ -5,29 +5,28 @@ episodes = db.get('episodecollection');
 marked = require('marked')
 moment = require('moment')
 
-# GET home page.
-module.exports = (app) ->
-  app.route("/")
-    .get (req, res, next)->
-      episodes.find {'publish_date':{'$lt':new Date()},'audio_url':{'$exists':true}}, {sort: {'publish_date': -1}}, (err, docs)->
-        res.render "index",
-          title: 'Web Friends HQ'
-          episodes: docs
-          marked: marked
-          moment: moment
-  app.route("/schedule")
-    .get (req, res, next)->
-      episodes.find {}, {sort: {'publish_date': 1}}, (err, docs)->
-        res.render "schedule",
-          title: 'Episode Schedule |  Web Friends HQ'
-          episodes: docs
-          marked: marked
-          moment: moment
-  app.route("/season/:season_id/episode/:episode_id")
-    .get (req, res, next)->
-      episodes.find {"season":parseInt(req.params.season_id),"episode":parseInt(req.params.episode_id)}, (err, docs)->
-        res.render "index",
-          title: "Episode"
-          episodes: docs
-          marked: marked
-          moment: moment
+router = require('express').Router()
+
+router.get '/', (req, res, next) ->
+  episodes.find {'publish_date':{'$lt':new Date()},'audio_url':{'$exists':true}}, {sort: {'publish_date': -1}}, (err, docs)->
+    res.render "index",
+      title: 'Web Friends HQ'
+      episodes: docs
+      marked: marked
+      moment: moment
+router.get '/schedule', (req, res, next) ->
+  episodes.find {}, {sort: {'publish_date': 1}}, (err, docs)->
+    res.render "schedule",
+      title: 'Episode Schedule |  Web Friends HQ'
+      episodes: docs
+      marked: marked
+      moment: moment
+router.get '/season/:season_id/episode/:episode_id', (req, res, next) ->
+  episodes.find {"season":parseInt(req.params.season_id),"episode":parseInt(req.params.episode_id)}, (err, docs)->
+    res.render "index",
+      title: docs[0].title
+      episodes: docs
+      marked: marked
+      moment: moment
+
+module.exports = router
