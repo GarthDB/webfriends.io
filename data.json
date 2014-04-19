@@ -141,21 +141,35 @@
 	"publish_date" : new Date('Apr 11, 2014')
 },
 {
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-6.mp3",
 	"season" : 1,
 	"episode" : 6,
 	"slug": "rachelnabors",
+	"front_image" : "/img/rachel_nabors@2X.png",
 	"guest" :{
+		"avatar" : "/img/rachel_avatar.jpg",
+		"bio": "an interaction developer and award-winning cartoonist; she blends storytelling with digital media to “tell better stories through code” at her studio, [Tin Magpie](http://tinmagpie.com/). Host of the [Infinite Canvas Screencast](http://theinfinitecanvas.com/).",
+		"class" : "developer",
 		"first_name" : "Rachel",
 		"last_name" : "Nabors",
+		"weakness" : "Face Blindness",
+		"strength" : "Storyteller",
 		"urls" : [
 			{
 				"url" : "https://twitter.com/rachelnabors",
 				"label" : "@rachelnabors",
 				"class" : "twitter"
+			},
+			{
+				"url" : "http://rachelnabors.com/",
+				"label" : "rachelnabors.com",
+				"class" : "link"
 			}
 		]
 	},
-	"publish_date" : new Date('Apr 18, 2014')
+	"title" : "The Fantastic Rachel Nabors",
+	"record_date" : new Date('Apr 18, 2014'),
+	"publish_date" : new Date('Apr 18, 2014'),
 },
 {
 	"season" : 1,
