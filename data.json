@@ -172,20 +172,34 @@
 	"publish_date" : new Date('Apr 18, 2014'),
 },
 {
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-7.mp3",
 	"season" : 1,
 	"episode" : 7,
 	"slug": "areus",
+	"front_image" : "/img/areus@2X.png",
 	"guest" :{
+		"avatar" : "/img/areus_avatar.jpg",
+		"bio" : "a designer living in San Diego. When he's not doing product design at [Slacker Radio](http://slacker.com), or prancing down the beach with his dogs, he's working on a set of [precomposed tools](http://areus.co/pctg) for designers.",
+		"class" : "designer",
 		"first_name" : "Aaron",
 		"last_name" : "Wade",
+		"weakness" : "Cotton Wood Trees",
+		"strength" : "4G inverted dive",
 		"urls" : [
 			{
 				"url" : "https://twitter.com/areus",
 				"label" : "@areus",
 				"class" : "twitter"
+			},
+			{
+				"url" : "http://rachelnabors.com/",
+				"label" : "rachelnabors.com",
+				"class" : "link"
 			}
 		]
 	},
+	"title" : "The Awesome Aaron Wade",
+	"record_date" : new Date('Apr 25, 2014'),
 	"publish_date" : new Date('Apr 25, 2014')
 },
 {
