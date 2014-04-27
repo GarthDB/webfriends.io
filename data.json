@@ -184,7 +184,7 @@
 		"first_name" : "Aaron",
 		"last_name" : "Wade",
 		"weakness" : "Cotton Wood Trees",
-		"strength" : "4G inverted dive",
+		"strength" : "4G inverted dive in a MiG28",
 		"urls" : [
 			{
 				"url" : "https://twitter.com/areus",
@@ -192,8 +192,8 @@
 				"class" : "twitter"
 			},
 			{
-				"url" : "http://rachelnabors.com/",
-				"label" : "rachelnabors.com",
+				"url" : "http://areuswade.com/",
+				"label" : "areuswade.com",
 				"class" : "link"
 			}
 		]
