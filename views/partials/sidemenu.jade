@@ -1,6 +1,10 @@
 .description
-  p A weekly interview show about the web and the friends who make it.
-  .caption Hosted by <a href="http://www.garthdb.com">Garth Braithwaite</a>
+  p(itemprop="description") A weekly interview show about the web and the friends who make it.
+  .caption
+    | Hosted by
+    span(itemscope, itemprop="author", itemtype="http://schema.org/Person")
+      meta(itemprop="url", content="http://www.garthdb.com")
+      a(href="http://www.garthdb.com", itemprop="name") Garth Braithwaite
 .sponsor
   div Brought to you by
   ul

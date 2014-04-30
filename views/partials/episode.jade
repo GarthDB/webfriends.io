@@ -1,0 +1,37 @@
+mixin episode(episode)
+  .episode(itemprop="episode", itemscope, itemtype="http://schema.org/RadioEpisode")
+    span.details(style="display: none;")
+      meta(itemprop="episodeNumber",content=episode.episode)
+      span(itemprop="audio", itemscope, itemtype="http://schema.org/AudioObject")
+        meta(itemprop="contentUrl", content=episode.audio_url)
+        meta(itemprop="datePublished", content=moment(episode.record_date).format("YYYY-MM-DD"))
+        meta(itemprop="encodingFormat", content="mp3")
+    .front
+      h2.guestname= episode.guest.full_name
+      .title= episode.guest.class
+      img.logo_small(src='/img/web_friends_small.svg')
+      img.front_image(src=episode.front_image)
+    .back(itemprop="actor", itemscope, itemtype="http://schema.org/Person")
+      header
+        h2.guestname(itemprop="name")= episode.guest.full_name
+        - function leadzeros(num, size) { var s = num+""; while (s.length < size) s = "0" + s; return s; }
+        .episodenumber="#"+leadzeros(episode.episode, 2)
+      .backdetails
+        img.avatar(src=episode.guest.avatar, itemprop="image")
+        dl.toplist
+          dt Super power
+          dd=episode.guest.strength
+          dt Weakness
+          dd=episode.guest.weakness
+        dl
+          dt=episode.guest.first_name+" is"
+          dd(itemprop="description")!=marked(episode.guest.bio)
+        ul.links
+          each url in episode.guest.urls
+            li(itemprop="url", class=url.class): a(href=url.url)=url.label
+      -if(episode.audio_url)
+        .audioplayer
+          h2= "Listen to "+episode.guest.first_name+"'s episode"
+          audio(controls, width="260", height="30", src=episode.audio_url)
+          .download: a(href=episode.audio_url, download=download) Download mp3
+          .recorddate Recorded #{moment(episode.record_date).format("MMM d, YYYY")}
