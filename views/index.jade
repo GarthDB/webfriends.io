@@ -3,9 +3,11 @@ include partials/episode
 
 block content
   div(itemscope, itemtype="http://schema.org/RadioSeries")
+    meta(itemprop="name", content="Web Friends")
+    meta(itemprop="url", content="http://www.webfriends.io")
     aside.sidemenu
       block sidemenu
         include partials/sidemenu
     each episode in episodes
       -episode.guest.full_name = episode.guest.first_name+ " " +episode.guest.last_name
-      +episode(episode)
+      +episode(episode, true)

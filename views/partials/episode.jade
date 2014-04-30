@@ -1,21 +1,37 @@
-mixin episode(episode)
+mixin episode(episode, link)
   .episode(itemprop="episode", itemscope, itemtype="http://schema.org/RadioEpisode")
     span.details(style="display: none;")
+      span(itemscope, itemprop="author director producer", itemtype="http://schema.org/Person")
+        meta(itemprop="url", content="http://www.garthdb.com")
+        meta(itemprop="name", content="Garth Braithwaite")
       meta(itemprop="episodeNumber",content=episode.episode)
       span(itemprop="audio", itemscope, itemtype="http://schema.org/AudioObject")
         meta(itemprop="contentUrl", content=episode.audio_url)
         meta(itemprop="datePublished", content=moment(episode.record_date).format("YYYY-MM-DD"))
         meta(itemprop="encodingFormat", content="mp3")
+      span(itemprop="musicBy", itemscope, itemtype="http://schema.org/MusicGroup")
+        meta(itemprop="name", content="Kubbi")
+        meta(itemprop="url", content="https://kubbi.bandcamp.com/")
+        span(itemprop="track", itemscope, itemtype="http://schema.org/MusicRecording")
+          meta(itemprop="name", content="Seahorse Dreams")
+          meta(itemprop="url", content="https://soundcloud.com/kubbi/seahorse-dreams")
     .front
       h2.guestname= episode.guest.full_name
       .title= episode.guest.class
       img.logo_small(src='/img/web_friends_small.svg')
       img.front_image(src=episode.front_image)
+      - if(link)
+        a.full_link(href="/season/#{episode.season}/episode/#{episode.episode}")
     .back(itemprop="actor", itemscope, itemtype="http://schema.org/Person")
       header
-        h2.guestname(itemprop="name")= episode.guest.full_name
-        - function leadzeros(num, size) { var s = num+""; while (s.length < size) s = "0" + s; return s; }
-        .episodenumber="#"+leadzeros(episode.episode, 2)
+        - if(link)
+          h2.guestname(itemprop="name"): a(href="/season/#{episode.season}/episode/#{episode.episode}")= episode.guest.full_name
+          - function leadzeros(num, size) { var s = num+""; while (s.length < size) s = "0" + s; return s; }
+          .episodenumber: a(href="/season/#{episode.season}/episode/#{episode.episode}")="#"+leadzeros(episode.episode, 2)
+        - else
+          h2.guestname(itemprop="name")= episode.guest.full_name
+          - function leadzeros(num, size) { var s = num+""; while (s.length < size) s = "0" + s; return s; }
+          .episodenumber="#"+leadzeros(episode.episode, 2)
       .backdetails
         img.avatar(src=episode.guest.avatar, itemprop="image")
         dl.toplist
