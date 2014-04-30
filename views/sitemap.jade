@@ -1,0 +1,18 @@
+xml
+  urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    url
+      loc http://webfriends.io/
+      lastmod!= moment(episodes[0].publish_date).format("YYYY-MM-DD")
+      changefreq weekly
+      priority 1.0
+    url
+      loc http://webfriends.io/
+      lastmod!= moment(episodes[episodes.length-1].publish_date).format("YYYY-MM-DD")
+      changefreq monthly
+      priority 0.7
+    each episode in episodes
+      url
+        loc http://webfriends.io/season/#{episode.season}/episode/#{episode.episode}
+        lastmod!= moment(episode.publish_date).format("YYYY-MM-DD")
+        changefreq yearly
+        priority 0.5
