@@ -9,7 +9,11 @@ html
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
     script(src="/js/mediaelement/mediaelement-and-player.min.js")
     link(rel="stylesheet", href="/js/mediaelement/mediaelementplayer.css")
-  body
+  body(itemscope, itemtype="http://schema.org/WebPage")
+    span.details
+      span(itemscope, itemprop="author", itemtype="http://schema.org/Person")
+        meta(itemprop="url", content="http://www.garthdb.com")
+        meta(itemprop="name", content="Garth Braithwaite")
     header.mainheader
       img(src="/img/web-friends-logo.svg", alt="Web Friends", class="logo")
       nav

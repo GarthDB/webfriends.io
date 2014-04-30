@@ -31,7 +31,6 @@ router.get '/season/:season_id/episode/:episode_id', (req, res, next) ->
       url: 'http://webfriends.io'+req.path
 router.get '/sitemap.xml', (req, res, next) ->
   episodes.find {'publish_date':{'$lt':new Date()},'audio_url':{'$exists':true}}, {sort: {'publish_date': -1}}, (err, docs)->
-    console.log(docs)
     res.header 'Content-Type', 'text/xml'
     res.render "sitemap",
       episodes: docs
