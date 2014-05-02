@@ -11,6 +11,7 @@ html
     link(rel="stylesheet", href="/js/mediaelement/mediaelementplayer.css")
   body(itemscope, itemtype="http://schema.org/WebPage")
     span.details
+      meta(itemprop="description", content="A weekly podcast about the web and the friends that make it.")
       span(itemscope, itemprop="author", itemtype="http://schema.org/Person")
         meta(itemprop="url", content="http://www.garthdb.com")
         meta(itemprop="name", content="Garth Braithwaite")
@@ -26,7 +27,7 @@ html
     main#content
       block content
     footer.mainfooter
-      | by 
+      | by
       a(href="https://plus.google.com/110061908980781621401/", rel="author") Garth Braithwaite
     script.
       $('audio').mediaelementplayer();
