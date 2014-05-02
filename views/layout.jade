@@ -25,6 +25,9 @@ html
           li: a(href="http://goodstuff.fm/webfriends/feed") rss
     main#content
       block content
+    footer.mainfooter
+      | by 
+      a(href="https://plus.google.com/110061908980781621401/", rel="author") Garth Braithwaite
     script.
       $('audio').mediaelementplayer();
     include partials/analytics

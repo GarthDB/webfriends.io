@@ -1,9 +1,9 @@
-[{
+{
 	"_id" : ObjectId("52ed92b0eb874c9a405bbe58"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-1.mp3",
 	"season" : 1,
 	"episode" : 1,
-	"slug": "jaimeejaimee",
+	"slug" : "jaimeejaimee",
 	"front_image" : "/img/jaimee@2X.png",
 	"guest" : {
 		"avatar" : "https://pbs.twimg.com/profile_images/1652341365/jai_hat.jpg",
@@ -27,15 +27,15 @@
 		]
 	},
 	"title" : "The Amazing Jaimee Newberry",
-	"record_date" : new Date('Jan 24, 2014'),
-	"publish_date" : new Date('Mar 18, 2014')
-},
+	"record_date" : ISODate("2014-01-24T08:00:00Z"),
+	"publish_date" : ISODate("2014-03-18T07:00:00Z")
+}
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-2.mp3",
 	"season" : 1,
 	"episode" : 2,
-	"slug": "markjohnsoncc",
+	"slug" : "markjohnsoncc",
 	"front_image" : "/img/markjohnson@2X.png",
 	"guest" : {
 		"avatar" : "/img/markjohnson_avatar.png",
@@ -54,16 +54,17 @@
 		]
 	},
 	"title" : "The Astonishing Mark Johnson",
-	"record_date" : new Date('Mar 21, 2014'),
-	"publish_date" : new Date('Mar 21, 2014')
-},
+	"record_date" : ISODate("2014-03-21T07:00:00Z"),
+	"publish_date" : ISODate("2014-03-21T07:00:00Z")
+}
 {
+	"_id" : ObjectId("5362e25c00a8fe6062a2c91d"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-3.mp3",
 	"season" : 1,
 	"episode" : 3,
-	"slug": "vlh",
+	"slug" : "vlh",
 	"front_image" : "/img/valhead@2X.png",
-	"guest" :{
+	"guest" : {
 		"avatar" : "/img/valhead_avatar.jpg",
 		"bio" : "a designer and consultant in Philadelphia; Author of [The Pocket Guide to CSS Animations](http://www.fivesimplesteps.com/products/css-animations). Co-host of the [Ladies in Tech](http://ladiesintech.com/category/podcast/) podcast. Founded the [Web Design Day](http://www.webdesignday/) conference.",
 		"class" : "designer",
@@ -85,16 +86,17 @@
 		]
 	},
 	"title" : "The Uncanny Val Head",
-	"record_date" : new Date('Mar 28, 2014'),
-	"publish_date" : new Date('Mar 28, 2014')
-},
+	"record_date" : ISODate("2014-03-28T07:00:00Z"),
+	"publish_date" : ISODate("2014-03-28T07:00:00Z")
+}
 {
+	"_id" : ObjectId("5362e25c00a8fe6062a2c91e"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-4.mp3",
 	"season" : 1,
 	"episode" : 4,
-	"slug": "bermonpainter",
+	"slug" : "bermonpainter",
 	"front_image" : "/img/bermon_painter@2X.png",
-	"guest" :{
+	"guest" : {
 		"avatar" : "/img/bermon_avatar.jpg",
 		"bio" : "a design/developer hybrid that loves Ruby & pre-processors. Hubby, father, cupcake eater, root beer drinker, spanish speaker, LDS, and organizer of [Blend Conf](http://www.blendconf.com/).",
 		"class" : "designer",
@@ -111,18 +113,19 @@
 		]
 	},
 	"title" : "The Spectacular Bermon Painter",
-	"record_date" : new Date('Apr 4, 2014'),
-	"publish_date" : new Date('Apr 4, 2014')
-},
+	"record_date" : ISODate("2014-04-04T07:00:00Z"),
+	"publish_date" : ISODate("2014-04-04T07:00:00Z")
+}
 {
+	"_id" : ObjectId("5362e25c00a8fe6062a2c91f"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-5.mp3",
 	"season" : 1,
 	"episode" : 5,
-	"slug": "dam",
+	"slug" : "dam",
 	"front_image" : "/img/dam@2X.png",
-	"guest" :{
+	"guest" : {
 		"avatar" : "/img/dam_avatar.png",
-		"bio": "originally a designer that has turned developer and is currently working at [AdobeXD](https://www.behance.net/AdobeXD/).  He is the main contributor on [Topcoat](http://www.topcoat.io).  He also created [Flexbox Grid](http://flexboxgrid.com/).",
+		"bio" : "originally a designer that has turned developer and is currently working at [AdobeXD](https://www.behance.net/AdobeXD/).  He is the main contributor on [Topcoat](http://www.topcoat.io).  He also created [Flexbox Grid](http://flexboxgrid.com/).",
 		"class" : "developer",
 		"first_name" : "Kristofer",
 		"last_name" : "Joseph",
@@ -137,18 +140,19 @@
 		]
 	},
 	"title" : "The Sensational Kristofer Joseph",
-	"record_date" : new Date('Apr 11, 2014'),
-	"publish_date" : new Date('Apr 11, 2014')
-},
+	"record_date" : ISODate("2014-04-11T07:00:00Z"),
+	"publish_date" : ISODate("2014-04-11T07:00:00Z")
+}
 {
+	"_id" : ObjectId("5362e25c00a8fe6062a2c920"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-6.mp3",
 	"season" : 1,
 	"episode" : 6,
-	"slug": "rachelnabors",
+	"slug" : "rachelnabors",
 	"front_image" : "/img/rachel_nabors@2X.png",
-	"guest" :{
+	"guest" : {
 		"avatar" : "/img/rachel_avatar.jpg",
-		"bio": "an interaction developer and award-winning cartoonist; she blends storytelling with digital media to “tell better stories through code” at her studio, [Tin Magpie](http://tinmagpie.com/). Host of the [Infinite Canvas Screencast](http://theinfinitecanvas.com/).",
+		"bio" : "an interaction developer and award-winning cartoonist; she blends storytelling with digital media to “tell better stories through code” at her studio, [Tin Magpie](http://tinmagpie.com/). Host of the [Infinite Canvas Screencast](http://theinfinitecanvas.com/).",
 		"class" : "developer",
 		"first_name" : "Rachel",
 		"last_name" : "Nabors",
@@ -168,16 +172,17 @@
 		]
 	},
 	"title" : "The Fantastic Rachel Nabors",
-	"record_date" : new Date('Apr 18, 2014'),
-	"publish_date" : new Date('Apr 18, 2014'),
-},
+	"record_date" : ISODate("2014-04-18T07:00:00Z"),
+	"publish_date" : ISODate("2014-04-18T07:00:00Z")
+}
 {
+	"_id" : ObjectId("5362e25c00a8fe6062a2c921"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-7.mp3",
 	"season" : 1,
 	"episode" : 7,
-	"slug": "areus",
+	"slug" : "areus",
 	"front_image" : "/img/areus@2X.png",
-	"guest" :{
+	"guest" : {
 		"avatar" : "/img/areus_avatar.jpg",
 		"bio" : "a designer living in San Diego. When he's not doing product design at [Slacker Radio](http://slacker.com), or prancing down the beach with his dogs, he's working on a set of [precomposed tools](http://areus.co/pctg) for designers.",
 		"class" : "designer",
@@ -199,14 +204,15 @@
 		]
 	},
 	"title" : "The Awesome Aaron Wade",
-	"record_date" : new Date('Apr 25, 2014'),
-	"publish_date" : new Date('Apr 25, 2014')
-},
+	"record_date" : ISODate("2014-04-25T07:00:00Z"),
+	"publish_date" : ISODate("2014-04-25T07:00:00Z")
+}
 {
+	"_id" : ObjectId("5362e25c00a8fe6062a2c922"),
 	"season" : 1,
 	"episode" : 8,
-	"slug": "mrmrs",
-	"guest" :{
+	"slug" : "mrmrs",
+	"guest" : {
 		"first_name" : "Adam",
 		"last_name" : "Morse",
 		"urls" : [
@@ -217,13 +223,14 @@
 			}
 		]
 	},
-	"publish_date" : new Date('May 2, 2014')
-},
+	"publish_date" : ISODate("2014-05-02T07:00:00Z")
+}
 {
+	"_id" : ObjectId("5362e25c00a8fe6062a2c923"),
 	"season" : 1,
 	"episode" : 9,
-	"slug": "brianleroux",
-	"guest" :{
+	"slug" : "brianleroux",
+	"guest" : {
 		"first_name" : "Brian",
 		"last_name" : "LeRoux",
 		"urls" : [
@@ -234,7 +241,5 @@
 			}
 		]
 	},
-	"publish_date" : new Date('May 9, 2014')
+	"publish_date" : ISODate("2014-05-09T07:00:00Z")
 }
-
-]

@@ -328,6 +328,12 @@ a:hover {
 .details {
   display: none;
 }
+.mainfooter {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .episode .back dt {
     font-weight: 600;
