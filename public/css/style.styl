@@ -9,7 +9,6 @@ body
 .mainheader
   background url("../img/halftone_bg.svg") #c1272d no-repeat bottom center
   width 100%
-  height 350px
   background-size contain
   text-align center
   position relative
@@ -17,8 +16,8 @@ body
   -moz-box-sizing border-box
   padding-bottom 60px
   img
-    width 820px
-    margin-top -10px
+    width 100%
+    max-width 700px
   nav
     width 100%
     height 60px
@@ -89,6 +88,7 @@ a:hover
       bottom 20px
       left 20px
       z-index 3
+      font-size 30px
     .full_link
       position absolute
       top 0
@@ -132,7 +132,6 @@ a:hover
   .guestname, .guestname a
     font-family 'blackout'
     color #e24c68
-    font-size 30px
   .back
     background #F0E8DC
     box-sizing border-box
@@ -277,8 +276,9 @@ a:hover
     dd
       font-weight 300
 @media only screen and (max-width : 880px)
-  .mainheader img
-    width 100%
+  .mainheader
+    nav ul
+      text-align center
   .episode
     display block
     .front
@@ -297,5 +297,5 @@ a:hover
   #content
     padding 0
     width 300px
-  .mainheader
-    height 220px
+  .mainheader li:first-child
+    display none

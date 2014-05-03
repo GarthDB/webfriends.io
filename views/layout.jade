@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='/css/reset.css')
     link(rel='stylesheet', href='/css/fonts/stylesheet.css')
     link(rel='stylesheet', href='/css/style.css')
-    meta(name='viewport', content='width=device-width, minimal-ui')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimal-ui')
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
     script(src="/js/mediaelement/mediaelement-and-player.min.js")
     link(rel="stylesheet", href="/js/mediaelement/mediaelementplayer.css")
@@ -16,18 +16,18 @@ html
         meta(itemprop="url", content="http://www.garthdb.com")
         meta(itemprop="name", content="Garth Braithwaite")
     header.mainheader
-      img(src="/img/web-friends-logo.svg", alt="Web Friends", class="logo")
+      a(href="/"): img(src="/img/web-friends-logo.svg", alt="Web Friends", class="logo")
       nav
         ul
           li: a(href="/") home
-          li: a(href="/schedule") episode schedule
+          li: a(href="/schedule") schedule
           li: a(href="http://goodstuff.fm/advertise/") sponsor
           li: a(href="https://itunes.apple.com/us/podcast/web-friends/id843374356?mt=2") itunes
           li: a(href="http://goodstuff.fm/webfriends/feed") rss
     main#content
       block content
     footer.mainfooter
-      | by
+      | by&nbsp;
       a(href="https://plus.google.com/110061908980781621401/", rel="author") Garth Braithwaite
     script.
       $('audio').mediaelementplayer();
