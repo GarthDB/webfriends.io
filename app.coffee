@@ -11,7 +11,7 @@ app.use require('compression')()
 app.use require('static-favicon')(__dirname + '/public/favicon.ico')
 app.use require('morgan')("dev") #logger
 app.use require('method-override')()
-app.use require("stylus").middleware(__dirname + '/public')
+app.use require("stylus").middleware({src: __dirname + '/public', dest: __dirname + '/public', compress: true})
 app.use express.static(path.join(__dirname, "public"))
 
 # development only
