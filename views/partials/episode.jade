@@ -50,4 +50,4 @@ mixin episode(episode, link)
           h2= "Listen to "+episode.guest.first_name+"'s episode"
           audio(controls, width="260", height="30", src=episode.audio_url)
           .download: a(href=episode.audio_url, download=download) Download mp3
-          .recorddate Recorded #{moment(episode.record_date).format("MMM d, YYYY")}
+          .recorddate Recorded #{moment(episode.record_date).format("MMM D, YYYY")}

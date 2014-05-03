@@ -1,4 +1,4 @@
-{
+[{
 	"_id" : ObjectId("52ed92b0eb874c9a405bbe58"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-1.mp3",
 	"season" : 1,
@@ -27,9 +27,9 @@
 		]
 	},
 	"title" : "The Amazing Jaimee Newberry",
-	"record_date" : ISODate("2014-01-24T08:00:00Z"),
-	"publish_date" : ISODate("2014-03-18T07:00:00Z")
-}
+	"record_date" : new Date("2014-01-24T08:00:00Z"),
+	"publish_date" : new Date("2014-03-18T07:00:00Z")
+},
 {
 	"_id" : ObjectId("532399d806f192ef1fb671bc"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-2.mp3",
@@ -54,9 +54,9 @@
 		]
 	},
 	"title" : "The Astonishing Mark Johnson",
-	"record_date" : ISODate("2014-03-21T07:00:00Z"),
-	"publish_date" : ISODate("2014-03-21T07:00:00Z")
-}
+	"record_date" : new Date("2014-03-21T07:00:00Z"),
+	"publish_date" : new Date("2014-03-21T07:00:00Z")
+},
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c91d"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-3.mp3",
@@ -86,9 +86,9 @@
 		]
 	},
 	"title" : "The Uncanny Val Head",
-	"record_date" : ISODate("2014-03-28T07:00:00Z"),
-	"publish_date" : ISODate("2014-03-28T07:00:00Z")
-}
+	"record_date" : new Date("2014-03-28T07:00:00Z"),
+	"publish_date" : new Date("2014-03-28T07:00:00Z")
+},
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c91e"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-4.mp3",
@@ -113,9 +113,9 @@
 		]
 	},
 	"title" : "The Spectacular Bermon Painter",
-	"record_date" : ISODate("2014-04-04T07:00:00Z"),
-	"publish_date" : ISODate("2014-04-04T07:00:00Z")
-}
+	"record_date" : new Date("2014-04-04T07:00:00Z"),
+	"publish_date" : new Date("2014-04-04T07:00:00Z")
+},
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c91f"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-5.mp3",
@@ -140,9 +140,9 @@
 		]
 	},
 	"title" : "The Sensational Kristofer Joseph",
-	"record_date" : ISODate("2014-04-11T07:00:00Z"),
-	"publish_date" : ISODate("2014-04-11T07:00:00Z")
-}
+	"record_date" : new Date("2014-04-11T07:00:00Z"),
+	"publish_date" : new Date("2014-04-11T07:00:00Z")
+},
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c920"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-6.mp3",
@@ -172,9 +172,9 @@
 		]
 	},
 	"title" : "The Fantastic Rachel Nabors",
-	"record_date" : ISODate("2014-04-18T07:00:00Z"),
-	"publish_date" : ISODate("2014-04-18T07:00:00Z")
-}
+	"record_date" : new Date("2014-04-18T07:00:00Z"),
+	"publish_date" : new Date("2014-04-18T07:00:00Z")
+},
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c921"),
 	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-7.mp3",
@@ -204,27 +204,41 @@
 		]
 	},
 	"title" : "The Awesome Aaron Wade",
-	"record_date" : ISODate("2014-04-25T07:00:00Z"),
-	"publish_date" : ISODate("2014-04-25T07:00:00Z")
-}
+	"record_date" : new Date("2014-04-25T07:00:00Z"),
+	"publish_date" : new Date("2014-04-25T07:00:00Z")
+},
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c922"),
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-8.mp3",
 	"season" : 1,
 	"episode" : 8,
 	"slug" : "mrmrs",
+	"front_image" : "/img/mrmrs@2X.png",
 	"guest" : {
+		"avatar" : "/img/mrmrs_avatar.jpg",
+		"bio" : "a designer and [open source](https://github.com/mrmrs) code typist. Likes designing with cats, vim, unix, cats, pen & paper, big type, big monitors, cats, and fun people. Currently a product designer at [Salesforce](https://www.salesforce.com).",
+		"class" : "designer",
 		"first_name" : "Adam",
 		"last_name" : "Morse",
+		"weakness" : "texting",
+		"strength" : "drunk texting",
 		"urls" : [
 			{
 				"url" : "https://twitter.com/mrmrs_",
 				"label" : "@mrmrs_",
 				"class" : "twitter"
+			},
+			{
+				"url" : "http://mrmrs.cc/",
+				"label" : "mrmrs.cc",
+				"class" : "link"
 			}
 		]
 	},
-	"publish_date" : ISODate("2014-05-02T07:00:00Z")
-}
+	"title" : "The Authentic Adam Morse",
+	"record_date" : new Date("2014-05-02T07:00:00Z"),
+	"publish_date" : new Date("2014-05-02T07:00:00Z")
+},
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c923"),
 	"season" : 1,
@@ -241,5 +255,5 @@
 			}
 		]
 	},
-	"publish_date" : ISODate("2014-05-09T07:00:00Z")
-}
+	"publish_date" : new Date("2014-05-09T07:00:00Z")
+}]
