@@ -7,6 +7,7 @@ app = express()
 app.set "port", process.env.PORT or 3001
 app.set "views", path.join(__dirname, "views")
 app.set "view engine", "jade"
+app.set "view cache"
 app.use require('compression')()
 app.use require('static-favicon')(__dirname + '/public/favicon.ico')
 app.use require('morgan')("dev") #logger
