@@ -241,19 +241,33 @@
 },
 {
 	"_id" : ObjectId("5362e25c00a8fe6062a2c923"),
+	"audio_url" : "http://www.podtrac.com/pts/redirect.mp3/goodstufffm.s3.amazonaws.com/uploads/webfriends-9.mp3",
 	"season" : 1,
 	"episode" : 9,
 	"slug" : "brianleroux",
+	"front_image" : "https://s3.amazonaws.com/webfriends/season_one/brianleroux@2X.png",
 	"guest" : {
+		"avatar" : "https://s3.amazonaws.com/webfriends/season_one/brianleroux_avatar.jpg",
+		"bio" : "a person and stuff.",
+		"class" : "developer",
 		"first_name" : "Brian",
 		"last_name" : "LeRoux",
+		"weakness" : "Unknown",
+		"strength" : "Everything",
 		"urls" : [
 			{
 				"url" : "https://twitter.com/brianleroux",
 				"label" : "@brianleroux",
 				"class" : "twitter"
+			},
+			{
+				"url" : "http://brian.io/",
+				"label" : "brian.io",
+				"class" : "link"
 			}
 		]
 	},
+	"title" : "The Magnificent Brian LeRoux",
+	"publish_date" : new Date("2014-05-09T07:00:00Z"),
 	"publish_date" : new Date("2014-05-09T07:00:00Z")
 }]
