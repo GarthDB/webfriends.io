@@ -1,5 +1,6 @@
 express = require("express")
 path = require("path")
+stylus = require("stylus")
 
 app = express()
 
@@ -12,7 +13,17 @@ app.use require('compression')()
 app.use require('static-favicon')(__dirname + '/public/favicon.ico')
 app.use require('morgan')("dev") #logger
 app.use require('method-override')()
-app.use require("stylus").middleware({src: __dirname + '/public', dest: __dirname + '/public', compress: true})
+app.use stylus.middleware(
+  src: __dirname + '/public'
+  dest: __dirname + '/public'
+  compress: true
+  compile: (str, path) ->
+    stylus(str).set('filename', path).set('compress', true)
+)
+
+# .middleware({src: __dirname + '/public', dest: __dirname + '/public', compress: true})
+
+
 app.use express.static(path.join(__dirname, "public"))
 
 # development only

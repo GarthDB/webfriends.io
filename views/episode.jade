@@ -3,9 +3,6 @@ include partials/episode
 include partials/disqus
 
 block content
-  aside.sidemenu
-    block sidemenu
-      include partials/sidemenu
   -episode.guest.full_name = episode.guest.first_name+ " " +episode.guest.last_name
   +episode(episode)
   +disqus(episode.title, url, episode._id)

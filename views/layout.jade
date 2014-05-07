@@ -2,15 +2,17 @@ doctype html
 html
   head
     title= title
-    style
-      include:css ../public/css/reset.css
-      include:css ../public/css/fonts/stylesheet.css
-      include:css ../public/css/style.css
-      include:css ../public/js/mediaelement/mediaelementplayer.min.css
-    //- link(rel='stylesheet', href='/css/reset.css')
-    //- link(rel='stylesheet', href='/css/fonts/stylesheet.css')
-    //- link(rel='stylesheet', href='/css/style.css')
-    //- link(rel="stylesheet", href="/js/mediaelement/mediaelementplayer.min.css")
+    if process.env.NODE_ENV == 'development'
+      link(rel='stylesheet', href='/css/reset.css')
+      link(rel='stylesheet', href='/css/fonts/stylesheet.css')
+      link(rel='stylesheet', href='/css/style.css')
+      link(rel="stylesheet", href="/js/mediaelement/mediaelementplayer.min.css")
+    else
+      style
+        include:css ../public/css/reset.css
+        include:css ../public/css/fonts/stylesheet.css
+        include:css ../public/css/style.css
+        include:css ../public/js/mediaelement/mediaelementplayer.min.css
     meta(name='viewport', content='width=device-width, initial-scale=1, minimal-ui')
   body(itemscope, itemtype="http://schema.org/WebPage")
     span.details
@@ -28,8 +30,20 @@ html
           li: a(href="https://itunes.apple.com/us/podcast/web-friends/id843374356?mt=2") itunes
           li: a(href="http://goodstuff.fm/webfriends/feed") rss
     main#content
-      block content
+      aside.sidemenu
+        block sidemenu
+          include partials/sidemenu
+      .maincontent
+        block content
     footer.mainfooter
+      nav
+        ul
+          li Check out the <a href="/schedule">upcoming episodes</a>.
+          li <a href="http://goodstuff.fm/advertise/">Sponsor</a> future episodes.
+          li Subscribe and write a review on <a href="https://itunes.apple.com/us/podcast/web-friends/id843374356?mt=2">iTunes</a>.
+          li Subscribe to the <a href="http://goodstuff.fm/webfriends/feed">MP3 RSS Feed</a>
+          li Follow <a href="http://www.twitter.com/webfriendsio">@webfriendsio</a> on Twitter
+          li <a href=""></a>
       | by&nbsp;
       a(href="https://plus.google.com/110061908980781621401/", rel="author") Garth Braithwaite
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
