@@ -19,6 +19,7 @@ app.use stylus.middleware(
   compress: true
   compile: (str, path) ->
     stylus(str).set('filename', path).set('compress', true)
+    
 )
 
 # .middleware({src: __dirname + '/public', dest: __dirname + '/public', compress: true})
