@@ -1,0 +1,26 @@
+---
+layout: post
+permalink: /season/1/episode/8
+title: "The Authentic Adam Morse"
+audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-8.mp3"
+season: 1
+episode: 8
+slug: "areus"
+front_image: "https://s3.amazonaws.com/webfriends/season_one/mrmrs@2X.png"
+guest:
+  avatar: "https://s3.amazonaws.com/webfriends/season_one/mrmrs_avatar.jpg"
+  class: "designer"
+  first_name: "Adam"
+  last_name: "Morse"
+  weakness: "texting"
+  strength: "drunk texting"
+  urls:
+    - url: "http://twitter.com/mrmrs_"
+      label: "@mrmrs_"
+      class: "twitter"
+    - url: "http://mrmrs.cc"
+      label: "mrmrs.cc"
+      class: "link"
+record_date: 2014-05-02
+---
+a designer and [open source](https://github.com/mrmrs) code typist. Likes designing with cats, vim, unix, cats, pen & paper, big type, big monitors, cats, and fun people. Currently a product designer at [Salesforce](https://www.salesforce.com).

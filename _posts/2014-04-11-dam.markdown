@@ -1,0 +1,23 @@
+---
+layout: post
+permalink: /season/1/episode/5
+title: "The Sensational Kristofer Joseph"
+audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-5.mp3"
+season: 1
+episode: 5
+slug: "dam"
+front_image: "https://s3.amazonaws.com/webfriends/season_one/dam@2X.png"
+guest:
+  avatar: "https://s3.amazonaws.com/webfriends/season_one/dam_avatar.jpg"
+  class: "developer"
+  first_name: "Kristofer"
+  last_name: "Joseph"
+  weakness: "carbs"
+  strength: "body hair"
+  urls:
+    - url: "http://twitter.com/dam"
+      label: "@dam"
+      class: "twitter"
+record_date: 2014-04-11
+---
+originally a designer that has turned developer and is currently working at [AdobeXD](https://www.behance.net/AdobeXD/).  He is the main contributor on [Topcoat](http://www.topcoat.io).  He also created [Flexbox Grid](http://flexboxgrid.com/).

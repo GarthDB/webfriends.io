@@ -1,0 +1,30 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://webfriends.io/</loc>
+    {% for post in site.posts limit:1 %}
+      <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+    {% endfor %}
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://webfriends.io/schedule</loc>
+    {% for post in site.posts limit:1 %}
+      <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+    {% endfor %}
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ post.url | prepend: site.baseurl }}</loc>
+      <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  {% endfor %}
+</urlset>

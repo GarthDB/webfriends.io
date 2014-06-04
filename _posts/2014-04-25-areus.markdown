@@ -1,0 +1,26 @@
+---
+layout: post
+permalink: /season/1/episode/7
+title: "The Awesome Aaron Wade"
+audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-7.mp3"
+season: 1
+episode: 7
+slug: "areus"
+front_image: "https://s3.amazonaws.com/webfriends/season_one/areus@2X.png"
+guest:
+  avatar: "https://s3.amazonaws.com/webfriends/season_one/areus_avatar.jpg"
+  class: "designer"
+  first_name: "Aaron"
+  last_name: "Wade"
+  weakness: "Cotton Wood Trees"
+  strength: "4G inverted dive in a MiG28"
+  urls:
+    - url: "http://twitter.com/areus"
+      label: "@areus"
+      class: "twitter"
+    - url: "http://areuswade.com"
+      label: "areuswade.com"
+      class: "link"
+record_date: 2014-04-25
+---
+a designer living in San Diego. When he's not doing product design at [Slacker Radio](http://slacker.com), or prancing down the beach with his dogs, he's working on a set of [precomposed tools](http://areus.co/pctg) for designers.
