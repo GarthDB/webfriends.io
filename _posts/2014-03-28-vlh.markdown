@@ -1,0 +1,26 @@
+---
+layout: post
+permalink: /season/1/episode/3
+title: "The Uncanny Val Head"
+audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-3.mp3"
+season: 1
+episode: 3
+slug: "vlh"
+front_image: "https://s3.amazonaws.com/webfriends/season_one/valhead@2X.png"
+guest:
+  avatar: "https://s3.amazonaws.com/webfriends/season_one/valhead_avatar.jpg"
+  class: "designer"
+  first_name: "Val"
+  last_name: "Head"
+  weakness: "Cute puppies"
+  strength: "Intolerable coffee snob"
+  urls:
+    - url: "http://twitter.com/vlh"
+      label: "@vlh"
+      class: "twitter"
+    - url: "http://valhead.com"
+      label: "valhead.com"
+      class: "link"
+record_date: 2014-03-28
+---
+a Coach, [Speaker](http://ohheyjaimee.tumblr.com/about#confs), Writer, Co-host of the [Unprofessional podcast](http://unprofesh.com/), co-founder of [Bests.com](http://www.bests.com), and Mom.

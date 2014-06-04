@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <span class="details">
+      <meta itemprop="description" content="A weekly podcast about the web and the friends that make it.">
+      <span itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+        <meta itemprop="url" content="http://www.garthdb.com">
+        <meta itemprop="name" content="Garth Braithwaite">
+      </span>
+    </span>
+    <header class="mainheader">
+      <a href="/"><img src="/img/web-friends-logo.svg" alt="Web Friends" class="logo"></a>
+      <nav><ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/schedule">schedule</a></li>
+        <li><a href="http://goodstuff.fm/advertise/">sponsor</a></li>
+        <li><a href="https://itunes.apple.com/us/podcast/web-friends/id843374356?mt=2">itunes</a></li>
+        <li><a href="http://goodstuff.fm/webfriends/feed">rss</a></li>
+      </ul></nav>
+    </header>
+    {% include banner.html %}
+    <main id="content">
+      {{ content }}
+    </main>
+    <footer class="mainfooter">
+      by&nbsp;<a href="https://plus.google.com/110061908980781621401/" rel="author">Garth Braithwaite</a>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="/js/mediaelement/mediaelement-and-player.min.js"></script>
+    <script>$('audio').mediaelementplayer();</script>
+    {% include analytics.html %}
+  </body>
+</html>
