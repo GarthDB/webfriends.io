@@ -24,12 +24,18 @@
     <div class="title">{{ post.guest.class }}</div>
     <img class="logo_small" src="/img/web_friends_small.svg" alt="Web Friends"/>
     <img class="front_image" src="{{ post.front_image }}" alt="{{ post.guest.first_name }} {{ post.guest.last_name }}">
+    {% if (link) %}
     <a class="full_link" href="{{ post.url | prepend: site.baseurl }}"></a>
+    {% endif %}
   </div>
   <div class="back" itemprop="actor" itemscope itemtype="http://schema.org/Person">
     <header>
       <h2 class="guestname" itemprop="name">
+        {% if (link) %}
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.guest.first_name }} {{ post.guest.last_name }}</a>
+        {% else %}
+        {{ post.guest.first_name }} {{ post.guest.last_name }}
+        {% endif %}
       </h2>
       <div class="episodenumber">
         <a href="{{ post.url | prepend: site.baseurl }}">#{{ post.episode }}</a>
@@ -45,7 +51,7 @@
       </dl>
       <dl>
         <dt>{{ post.guest.first_name }} is</dt>
-        <dd itemprop="description">{{ post.content }}</dd>
+        <dd itemprop="description">{{ content }}</dd>
       </dl>
       <ul class="links">
         {% for url in post.guest.urls %}
