@@ -8,70 +8,8 @@ layout: default
     {% include sidemenu.html %}
   </aside>
   {% for post in site.posts %}
-    <div class="episode" itemprop="episode" itemscope itemtype="http://schema.org/RadioEpisode">
-      <span class="details">
-        <span itemscope itemprop="author director producer" itemtype="http://schema.org/Person">
-          <meta itemprop="url" content="http://www.garthdb.com">
-          <meta itemprop="name" content="Garth Braithwaite">
-        </span>
-        <meta itemprop="episodeNumber" content="{{ post.episode }}">
-        <span itemprop="audio" itemscope itemtype="http://schema.org/AudioObject">
-          <meta itemprop="contentUrl" content="{{ post.audio_url }}">
-          <meta itemprop="datePublished" content="{{ post.record_date | date: "%Y-%m-%d" }}">
-          <meta itemprop="encodingFormat" content="mp3">
-        </span>
-        <span itemprop="musicBy" itemscope itemtype="http://schema.org/MusicGroup">
-          <meta itemprop="name" content="Kubbi">
-          <meta itemprop="url" content="https://kubbi.bandcamp.com/">
-          <span itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
-            <meta itemprop="name" content="Seahorse Dreams">
-            <meta itemprop="url" content="https://soundcloud.com/kubbi/seahorse-dreams">
-          </span>
-        </span>
-      </span>
-      <div class="front">
-        <h2 class="guestname">{{ post.guest.first_name }} {{ post.guest.last_name }}</h2>
-        <div class="title">{{ post.guest.class }}</div>
-        <img class="logo_small" src="/img/web_friends_small.svg" alt="Web Friends"/>
-        <img class="front_image" src="{{ post.front_image }}" alt="{{ post.guest.first_name }} {{ post.guest.last_name }}">
-        <a class="full_link" href="{{ post.url | prepend: site.baseurl }}"></a>
-      </div>
-      <div class="back" itemprop="actor" itemscope itemtype="http://schema.org/Person">
-        <header>
-          <h2 class="guestname" itemprop="name">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.guest.first_name }} {{ post.guest.last_name }}</a>
-          </h2>
-          <div class="episodenumber">
-            <a href="{{ post.url | prepend: site.baseurl }}">#{{ post.episode }}</a>
-          </div>
-        </header>
-        <div class="backdetails">
-          <img class="avatar" src="{{ post.guest.avatar }}" itemprop="image" alt="{{ post.guest.first_name }} {{ post.guest.last_name }}">
-          <dl class="toplist">
-            <dt>Super power</dt>
-            <dd>{{ post.guest.strength }}</dd>
-            <dt>Weakness</dt>
-            <dd>{{ post.guest.weakness }}</dd>
-          </dl>
-          <dl>
-            <dt>{{ post.guest.first_name }} is</dt>
-            <dd itemprop="description">{{ post.content }}</dd>
-          </dl>
-          <ul class="links">
-            {% for url in post.guest.urls %}
-              <li itemprop="url" class="{{ url.class }}"><a href="{{ url.url }}">{{ url.label }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% if (post.audio_url) %}
-          <div class="audioplayer">
-            <h2>Listen to {{ post.guest.first_name }}'s episode</h2>
-            <audio controls style="width:260px; height:30px;" src="{{ post.audio_url }}"></audio>
-            <div class="download"><a href="{{ post.audio_url }}" download>Download mp3</a></div>
-            <div class="recorddate">Recorded {{ post.record_date | date: "%b %d, %Y" }}</div>
-          </div>
-        {% endif %}
-      </div>
-    </div>
+    {% assign link = true %}
+    {% assign content = post.content %}
+    {% include episode.html %}
   {% endfor %}
 </div>
