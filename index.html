@@ -10,6 +10,6 @@ layout: default
   {% for post in site.posts %}
     {% assign link = true %}
     {% assign content = post.content %}
-    {% include episode.html %}
+    {% include {{ post.episode_layout }} %}
   {% endfor %}
 </div>

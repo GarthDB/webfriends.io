@@ -1,5 +1,6 @@
 ---
 layout: post
+episode_layout: episode_season_1.html
 permalink: /season/1/episode/1
 title: "The Amazing Jaimee Newberry"
 audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-1.mp3"

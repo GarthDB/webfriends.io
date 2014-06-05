@@ -97,11 +97,23 @@ a:hover {
     overflow: hidden;
     vertical-align: top;
   }
+  &.season_1 {
+    .front {
+      background: url('/img/halftone_bg_small.svg') #FFEBAF no-repeat;
+      background-position: right bottom;
+      background-size: 241px 580px;
+      position: relative;
+    }
+  }
+  &.season_2 {
+    .front {
+      background: url('/img/halftone_bg_small2.svg') #A2DBD0 no-repeat;
+      background-position: -255px 0;
+      background-size: 684px 290px;
+      position: relative;
+    }
+  }
   .front {
-    background: url('/img/halftone_bg_small.svg') #FFEBAF no-repeat;
-    background-position: right bottom;
-    background-size: 241px 580px;
-    position: relative;
     .guestname {
       position: absolute;
       bottom: 20px;

@@ -1,5 +1,6 @@
 ---
 layout: post
+episode_layout: episode_season_1.html
 permalink: /season/1/episode/6
 title: "The Fantastic Rachel Nabors"
 audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-6.mp3"
