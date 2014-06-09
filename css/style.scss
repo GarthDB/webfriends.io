@@ -292,20 +292,18 @@ a:hover {
   padding-left: 200px;
   position: relative;
 }
+.caption {
+  margin-top: 0.8rem;
+  font-size: 0.7rem;
+}
 .sidemenu {
   position: absolute;
   left: 0;
   top: 0;
   width: 160px;
   vertical-align: top;
-}
-.caption {
-  margin-top: 0.8rem;
-  font-size: 0.7rem;
-}
-.sidemenu {
   font-size: 0.75rem;
-  line-height: 1.3rem;
+  line-height: 1.1rem;
   margin-bottom: 60px;
   section {
     font-size: 0.7rem;
