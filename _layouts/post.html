@@ -1,10 +1,17 @@
 ---
 layout: default
 ---
-{% assign post = page %}
-{% assign link = false %}
-{% include {{ page.episode_layout }} %}
-{% assign title = page.title %}
-{% assign url = page.url %}
-{% assign identifier = page.id %}
-{% include disqus.html %}
+<div itemscope itemtype="http://schema.org/RadioSeries">
+  <meta itemprop="name" content="Web Friends">
+  <meta itemprop="url" content="http://www.webfriends.io">
+  <aside class="sidemenu">
+    {% include sidemenu.html %}
+  </aside>
+  {% assign post = page %}
+  {% assign link = false %}
+  {% include {{ page.episode_layout }} %}
+  {% assign title = page.title %}
+  {% assign url = page.url %}
+  {% assign identifier = page.id %}
+  {% include disqus.html %}
+</div>

@@ -15,7 +15,7 @@
       {% for page in site.pages %}
       {% for pc in page.category %}
       {% if pc == "archive" %}
-      <li><a href="#">{{page.title}}</a></li>
+      <li><a href="{{page.url}}">{{page.title}}</a></li>
       {% endif %}
       {% endfor %}
       {% endfor %}
