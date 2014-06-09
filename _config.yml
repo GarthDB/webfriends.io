@@ -3,7 +3,7 @@ title: Web Friends
 email: garthdb@webfriends.io
 description: "A weekly interview show about the web and the friends who make it."
 baseurl: ""
-url: ""
+url: "http://webfriends.io"
 
 # Build settings
 markdown: kramdown
