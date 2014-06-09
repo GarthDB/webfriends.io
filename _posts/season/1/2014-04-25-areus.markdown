@@ -23,5 +23,6 @@ guest:
       label: "areuswade.com"
       class: "link"
 record_date: 2014-04-25
+category: "1"
 ---
 a designer living in San Diego. When he's not doing product design at [Slacker Radio](http://slacker.com), or prancing down the beach with his dogs, he's working on a set of [precomposed tools](http://areus.co/pctg) for designers.

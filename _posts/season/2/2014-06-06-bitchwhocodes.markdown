@@ -20,5 +20,6 @@ guest:
       label: "@bitchwhocodes"
       class: "twitter"
 record_date: 2014-06-06
+category: "2"
 ---
 a consumer of cupcakes and creator of mostly digital and sometimes physical things.

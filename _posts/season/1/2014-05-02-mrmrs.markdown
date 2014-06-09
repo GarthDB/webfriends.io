@@ -23,5 +23,6 @@ guest:
       label: "mrmrs.cc"
       class: "link"
 record_date: 2014-05-02
+category: "1"
 ---
 a designer and [open source](https://github.com/mrmrs) code typist. Likes designing with cats, vim, unix, cats, pen & paper, big type, big monitors, cats, and fun people. Currently a product designer at [Salesforce](https://www.salesforce.com).

@@ -23,5 +23,6 @@ guest:
       label: "jaimeejaimee.com"
       class: "link"
 record_date: 2014-01-24
+category: "1"
 ---
 a Coach, [Speaker](http://ohheyjaimee.tumblr.com/about#confs), Writer, Co-host of the [Unprofessional podcast](http://unprofesh.com/), co-founder of [Bests.com](http://www.bests.com), and Mom.

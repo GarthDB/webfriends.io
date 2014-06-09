@@ -23,5 +23,6 @@ guest:
       label: "valhead.com"
       class: "link"
 record_date: 2014-03-28
+category: "1"
 ---
 a Coach, [Speaker](http://ohheyjaimee.tumblr.com/about#confs), Writer, Co-host of the [Unprofessional podcast](http://unprofesh.com/), co-founder of [Bests.com](http://www.bests.com), and Mom.

@@ -23,5 +23,6 @@ guest:
       label: "rachelnabors.com"
       class: "link"
 record_date: 2014-04-18
+category: "1"
 ---
 an interaction developer and award-winning cartoonist; she blends storytelling with digital media to “tell better stories through code” at her studio, [Tin Magpie](http://tinmagpie.com/). Host of the [Infinite Canvas Screencast](http://theinfinitecanvas.com/).

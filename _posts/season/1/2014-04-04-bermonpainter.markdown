@@ -20,5 +20,6 @@ guest:
       label: "@bermonpainter"
       class: "twitter"
 record_date: 2014-04-04
+category: "1"
 ---
 a design/developer hybrid that loves Ruby & pre-processors. Hubby, father, cupcake eater, root beer drinker, spanish speaker, LDS, and organizer of [Blend Conf](http://www.blendconf.com/).

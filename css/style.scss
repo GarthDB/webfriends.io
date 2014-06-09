@@ -299,28 +299,33 @@ a:hover {
   width: 160px;
   vertical-align: top;
 }
-.description {
-  margin-bottom: 100px;
-  p {
-    line-height: 1.3rem;
-  }
-}
 .caption {
   margin-top: 0.8rem;
   font-size: 0.7rem;
 }
-.sidenav {
+.sidemenu {
   font-size: 0.75rem;
   line-height: 1.3rem;
   margin-bottom: 60px;
-}
-.sponsor {
-  font-size: 0.7rem;
-  & > div:first-child {
+  section {
+    font-size: 0.7rem;
+    display: block;
+    margin-bottom: 40px;
+  }
+  header {
     margin-bottom: 10px;
     border-bottom: 1px solid #CCC;
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
+  .description {
+    font-size: 1rem;
+    margin-bottom: 60px;
+    p {
+      line-height: 1.3rem;
+    }
+  }
+}
+.sponsor {
   ul {
     list-style: none;
   }

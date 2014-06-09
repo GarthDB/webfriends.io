@@ -20,5 +20,6 @@ guest:
       label: "@dam"
       class: "twitter"
 record_date: 2014-04-11
+category: "1"
 ---
 originally a designer that has turned developer and is currently working at [AdobeXD](https://www.behance.net/AdobeXD/).  He is the main contributor on [Topcoat](http://www.topcoat.io).  He also created [Flexbox Grid](http://flexboxgrid.com/).

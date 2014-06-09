@@ -20,5 +20,6 @@ guest:
       label: "@markjohnsoncc"
       class: "twitter"
 record_date: 2014-03-21
+category: "1"
 ---
 a giraffe-like monster who occasionally designs, occasionally grazes, and usually doesn’t know what day it is.

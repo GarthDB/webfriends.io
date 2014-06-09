@@ -23,5 +23,6 @@ guest:
       label: "brian.io"
       class: "link"
 record_date: 2014-05-09
+category: "1"
 ---
 a developer that helped create, foster, and grow [PhoneGap](http://phonegap.com/) into [Apache Cordova](https://cordova.apache.org/). One of the [Topcoat](http://topcoat.io/) characters. Sometimes known for [wtfjs](http://wtfjs.com/).
