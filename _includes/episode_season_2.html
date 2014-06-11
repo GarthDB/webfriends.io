@@ -38,7 +38,11 @@
         {% endif %}
       </h2>
       <div class="episodenumber">
+        {% if post.episode < 10 %}
+        <a href="{{ post.url | prepend: site.baseurl }}">#0{{ post.episode }}</a>
+        {% else %}
         <a href="{{ post.url | prepend: site.baseurl }}">#{{ post.episode }}</a>
+        {% endif %}
       </div>
     </header>
     <div class="backdetails">
