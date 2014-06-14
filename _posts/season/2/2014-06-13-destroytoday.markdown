@@ -13,8 +13,8 @@ guest:
   class: "developer"
   first_name: "Jonnie"
   last_name: "Hallman"
-  weakness: "unknown"
-  strength: "unknown"
+  weakness: "Too easily swayed"
+  strength: "Speaks designer and dev"
   urls:
     - url: "http://twitter.com/destroytoday"
       label: "@destroytoday"
@@ -22,4 +22,4 @@ guest:
 record_date: 2014-06-13
 category: "2"
 ---
-bio here
+a freelance designer/dev in Brooklyn. Recent client work includes the websites for [Pencil](http://fiftythree.com/pencil) (FiftyThree) and [Carousel](http://carousel.com) (Dropbox). He's currently working on a freelancer app called [Cushion](http://cushionapp.com).
