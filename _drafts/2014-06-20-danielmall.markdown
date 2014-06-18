@@ -13,13 +13,16 @@ guest:
   class: "designer"
   first_name: "Daniel"
   last_name: "Mall"
-  weakness: "unkown"
-  strength: "unkown"
+  weakness: "People who interrupt"
+  strength: "Collecting sneakers"
   urls:
     - url: "http://twitter.com/danielmall"
       label: "@danielmall"
       class: "twitter"
+    - url: "http://danielmall.com/"
+      label: "danielmall.com"
+      class: "link"
 record_date: 2014-06-20
 category: "2"
 ---
-a great person who will send me his bio.
+a designer and advisor from Philly. Dan is the founder of design collaborative [SuperFriendly](http://superfriend.ly/), an enthralled husband and dad, and co-founder of [Typedia](http://typedia.com/) and [The Businessology Show](http://businessologyshow.biz/wordpress/).
