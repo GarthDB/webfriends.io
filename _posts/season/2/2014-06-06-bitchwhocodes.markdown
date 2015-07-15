@@ -3,7 +3,7 @@ layout: post
 episode_layout: episode_season_2.html
 permalink: /season/2/episode/1
 title: "The Genuine Stacey Mulcahy"
-audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-10.mp3"
+audio_url: "http://creativefriends.io/audio/webfriends-10.mp3"
 season: 2
 episode: 1
 slug: "bitchwhocodes"

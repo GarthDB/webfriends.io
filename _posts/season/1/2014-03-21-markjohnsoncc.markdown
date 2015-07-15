@@ -3,7 +3,7 @@ layout: post
 episode_layout: episode_season_1.html
 permalink: /season/1/episode/2
 title: "The Astonishing Mark Johnson"
-audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-2.mp3"
+audio_url: "http://creativefriends.io/audio/webfriends-2.mp3"
 season: 1
 episode: 2
 slug: "markjohnsoncc"

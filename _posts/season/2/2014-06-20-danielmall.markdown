@@ -3,7 +3,7 @@ layout: post
 episode_layout: episode_season_2.html
 permalink: /season/2/episode/3
 title: "The Distinctive Daniel Mall"
-audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-12.mp3"
+audio_url: "http://creativefriends.io/audio/webfriends-12.mp3"
 season: 2
 episode: 3
 slug: "danielmall"

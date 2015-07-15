@@ -3,7 +3,7 @@ layout: post
 episode_layout: episode_season_2.html
 permalink: /season/2/episode/4
 title: "The Magnificent Brad Frost"
-audio_url: "https://goodstufffm.s3.amazonaws.com/uploads/webfriends-13.mp3"
+audio_url: "http://creativefriends.io/audio/webfriends-13.mp3"
 season: 2
 episode: 4
 slug: "bradfrost"
